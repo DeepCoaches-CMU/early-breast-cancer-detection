@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "MamoVision AI",
+    "slug": "mamovision-ai-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0A0A0F"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mamovision.ai",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Access photos to analyze medical ultrasound images.",
+        "NSCameraUsageDescription": "Access camera to capture medical ultrasound images."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0F"
+      },
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA"
+      ],
+      "package": "com.mamovision.ai"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "MamoVision AI needs access to analyze medical ultrasound images.",
+          "cameraPermission": "MamoVision AI needs camera access to capture medical images."
+        }
+      ]
+    ]
+  }
+}
